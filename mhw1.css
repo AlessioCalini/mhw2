@@ -1,0 +1,336 @@
+body{
+    color:rgba(26,26,26,.7);
+    font-family: 'Raleway', sans-serif;
+    font-size:32px;
+    margin:0;
+}
+
+@media(max-width:500px){
+    body{
+        font-size:14px;
+    }
+}
+
+header{
+    color:white;
+    background-image: url(https://www.greenme.it/wp-content/uploads/2020/05/palestra.jpg);
+    background-size: cover;
+    background-position:center;
+    height:700px;
+    position:relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:500px){
+    header{
+        height:350px;
+        line-height: 1.2;
+    }
+}
+
+#overlay{
+    background-color:rgba(0,0,0,0.3);
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+}
+
+ nav{
+   background-color:rgb(46, 45, 45);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+
+    font-size: 1em;
+    padding:20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+@media(max-width:500px){
+    #logo{
+        font-size:1em;
+    }
+}
+
+#logo img{
+    width: 50px;
+    height:50px;
+    margin-bottom: -20px;
+}
+
+#links a{
+    margin: 15px;
+    font-size: .7em;
+}
+
+#menu{
+    display:none;
+}
+
+#menu div{
+    width:25px;
+    height:3px;
+    background-color: white;
+    margin:5px 0;
+}
+
+@media(max-width:500px){
+    #links{
+        display: none;
+    }
+#menu{
+    display: block;
+}
+}
+
+a{
+    cursor: pointer;
+}
+
+a.button{
+    padding:10px 15px;
+    border:2px white;
+}
+
+a.button:hover{
+    background-color: white;
+    color:rgb(46, 45, 45);
+}
+
+header h1,
+header h2,
+header h3{
+    font-size:1em;
+    line-height: 1.5;
+    height:auto;
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+}
+
+header h1 strong{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+@media(max-width:500px){
+    header h1 strong{
+        font-size:1em;
+    }
+}
+
+ header #icon{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+#icon img{
+    width: 100px;
+    height:100px;
+}
+
+@media(max-width:500px){
+    #icon img{
+        width: 50px;
+        height:50px;
+    }
+}
+
+
+header h2 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+header h3{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -60px;
+    
+}
+
+h3 a.button{
+    font-size: .6em;
+    font-weight: bold;
+    border:2px solid white;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+section{
+    margin:100px;
+    text-align: center;
+}
+
+@media(max-width:500px){
+    section{
+        margin:40px 10px;
+    }
+}
+
+#main h1{
+    font-family: 'Nunito', sans-serif;
+    font-size:1.75em;
+    font-weight:normal;
+    color:rgb(26,26,26);
+}
+
+#main p{
+    font-size: .75em;
+    letter-spacing: 1px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 125px;
+    width:60%;
+}
+
+#details,
+#details2{
+    display:flex;
+    justify-content: space-between;
+}
+
+@media(max-width:500px){
+    #details,
+    #details2{
+        flex-direction: column;
+    }
+}
+
+#details div,
+#details2 div{
+    flex-grow: 1;
+    padding:20px;
+    width:100%;
+}
+
+
+@media(max-width:500px){
+    #details div,
+    #details2 div{
+        padding:0;
+    }
+}
+
+@media(max-width:500px){
+    #details2 div{
+        width:100%;
+    }
+}
+
+#details img,
+#details2 img{
+    width:600px;
+    height:300px;
+}
+
+@media(max-width:500px){
+    #details img,
+    #details2 img{
+    width:300px;
+    height:150px;
+}
+}
+
+#details h1,
+#details2 h1{
+    font-size:1.5em ;
+    color:#cc220a;
+}
+
+#details p,
+#details2 p{
+    font-size:0.7em;
+    color:rgb(26,26,26);
+}
+
+@media(max-width:500px){
+    #details p,
+    #details2 p{
+        letter-spacing: 2px;
+        font-weight: 500;
+}
+}
+
+
+footer{
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(31,31,31);
+    color:rgba(255,255,255,.8);
+    padding:75px;
+    text-align: center;
+}
+
+@media(max-width:500px){
+    footer{
+        padding:0;
+    }
+}
+
+address{
+    font-size: .5em;
+}
+
+footer h1{
+    font-size: 1em;
+}
+
+#social{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+#social img{
+    width:50px;
+    height:50px;
+}
+
+@media(max-width:500px){
+    #social img{
+        width:25px;
+        height:25px;
+    }
+}
+
+#social p{
+    font-size: 16px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+@media(max-width:500px){
+    #social p{
+        font-size:8px;
+    }
+}
